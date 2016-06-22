@@ -11,8 +11,14 @@
 				left: 250px;}
 			#navigation ul {
 				list-style: none;
-				margin: 0;
-				padding: 0; 
+				padding: 5px;
+				width: 125px; 
 				background-color: #00abcf;}
-			}
+			#navigation li {
+				background-color: #00abcf;
+				padding: 5px;}
+			#navigation #currentpage {
+				background: #ffffff
+				color: #333;
+				}
 		</style>
