@@ -1,0 +1,22 @@
+<style type="text/css">
+			body {
+				background-color: #cccccc;}
+			h1 {
+				position: absolute;
+				top: 0px;
+				left: 250px;}
+			p {
+				position: absolute;
+				top: 50px;
+				left: 250px;}
+			table {
+				width: 125px;
+				border-collapse: collapse;
+				position: absolute;
+				top: 75px;
+				left: 10px;}
+			th, td {
+				padding: 5px 7px 7px 5px;}
+			tr {
+				background-color: #00abcf;}
+		</style>
