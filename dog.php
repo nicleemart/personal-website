@@ -1,4 +1,5 @@
 <?php $thisPage="Dog"; ?>
+<?php $directory_prefix=""; ?>
 <html>
 	<head>
 		<title>Meet Rooster</title>

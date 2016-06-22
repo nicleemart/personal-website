@@ -1,4 +1,5 @@
 <?php $thisPage="Goals"; ?>
+<?php $directory_prefix=""; ?>
 <html>
 	<head>
 		<title>Goals</title>
