@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>HTML and CSS</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<h1>The Web</h1>

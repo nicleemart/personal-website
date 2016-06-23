@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>Goals</title>
-		<!--<link href="style.css" type="text/css" rel="stylesheet" />-->
+	<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<h1>Hello!</h1>

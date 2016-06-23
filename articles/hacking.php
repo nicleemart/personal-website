@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>Ethics of Hacking</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<h1>Article!</h1>

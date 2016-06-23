@@ -3,10 +3,17 @@
 <html>
 	<head>
 		<title>Meet Rooster</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<h1>Rooster, the Australian Shepherd</h1>
+	<div class= "flex-container">
+		<div class="flex1">
+
+		</div>
+				<h3>Rooster, the Australian Shepherd</h3>
 	<p>These are photos of my dog, Rooster.</p>
+	<div class="flex2">
 	<?php include("navigation.php"); ?>
+	</div>
 	</body>
 </html>
