@@ -1,9 +1,9 @@
 	<div id="navigation">
 	<ul>
 		<li><strong>Navigation</strong></li>
-		<li><a href="<?php echo "$directory_prefix" . "index.php" ?>">Home</a></li>
-		<li><a href="<?php echo "$directory_prefix" . "goals.php" ?>">Goals</a></li>
-		<li><a href="<?php echo "$directory_prefix" . "dog.php" ?>">Meet Rooster</a></li>
+		<li<?php if ($thisPage=="Index") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "index.php" ?>">Home</a></li>
+		<li<?php if ($thisPage=="Goals") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "goals.php" ?>">Goals</a></li>
+		<li<?php if ($thisPage=="Dog") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "dog.php" ?>">Meet Rooster</a></li>
 		<li><strong>Articles</strong></li>
 		<li><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
 		<li><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>

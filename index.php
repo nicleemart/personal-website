@@ -1,4 +1,4 @@
-<?php $thisPage="Home"; ?>
+<?php $thisPage="Index"; ?>
 <?php $directory_prefix=""; ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
 	<body>
 	<div class= "flex-container">
 		<div class="flex1">
-		<h1>Nikki Martin</h1>
+		<?php include("header.php"); ?>
 		</div>
 	<div class="flex2">
 <?php include("navigation.php"); ?>

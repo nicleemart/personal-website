@@ -8,7 +8,7 @@
 	<body>
 	<div class= "flex-container">
 		<div class="flex1">
-
+			<?php include("header.php"); ?>
 		</div>
 				<h3>Rooster, the Australian Shepherd</h3>
 	<p>These are photos of my dog, Rooster.</p>
