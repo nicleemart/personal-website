@@ -18,7 +18,8 @@ body {
 	left: 0px;
 	display: flex;
 	flex-flow: column;
-	width: 175px;
+	justify-content: center;
+	width: 225px;
 	height: 100px;
 }
 .flex2 {
@@ -28,7 +29,7 @@ body {
     top: 100px;
 	display: flex;
 	flex-flow: column;
-    width: 175px;
+    width: 225px;
     height: 100%;
  }
  #navigation ul {
@@ -37,12 +38,12 @@ body {
 p {
 	position: absolute;
 	top: 30px;
-	left: 200px;
+	left: 250px;
 }
 h3 {
 	position: absolute;
 	top: 5px;
-	left: 200px;
+	left: 250px;
 }
 a:link {
 	color: red;
