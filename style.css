@@ -1,25 +1,35 @@
 body {
-	font-family: Helvetica;
-	background-color: Green;
+	font-family: Garamond;
+	color: #413E4A;
+	background-color: #F0B49E;
 }
 .flex-container {
     -webkit-flex-direction: column;
     flex-direction: column;
-    background-color: Lavender;
+    background-color: Green;
+    display: flex;
+  	flex: 0 0 100%;
+  	width: 100%;
 }
 .flex1 {
-	background-color: Silver;
+	background-color: #F7E4BE;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	flex-flow: column;
 	width: 175px;
-	height: 75px;
+	height: 100px;
 }
 .flex2 {
-    background-color: DeepSkyBlue;
+    background-color: #B38184;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+	display: flex;
+	flex-flow: column;
     width: 175px;
-    height: 300px;
- }
- .flex3 {
- 	background-color: Lavender;
- 	width: 300px;
+    height: 100%;
  }
  #navigation ul {
  	list-style: none;
@@ -33,4 +43,16 @@ h3 {
 	position: absolute;
 	top: 5px;
 	left: 200px;
+}
+a:link {
+	color: red;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: #73626E;
+	text-decoration: none;
 }
