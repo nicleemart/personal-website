@@ -1,24 +1,13 @@
-<style type="text/css">
-			body {
-				background-color: #cccccc;}
-			h1 {
-				position: absolute;
-				top: 0px;
-				left: 250px;}
-			p {
-				position: absolute;
-				top: 50px;
-				left: 250px;}
-			#navigation ul {
-				list-style: none;
-				padding: 5px;
-				width: 125px; 
-				background-color: #00abcf;}
-			#navigation li {
-				background-color: #00abcf;
-				padding: 5px;}
-			#navigation #currentpage {
-				background: #ffffff
-				color: #333;
-				}
-		</style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 500px;
+    background-color: Silver;
+}
+.flex1 {
+    background-color: DeepSkyBlue;
+    width: 250px;
+    height: 300px;
+.flex2 {
+	width: 150px;
+ }
