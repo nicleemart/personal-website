@@ -14,5 +14,7 @@
 <?php include("navigation.php"); ?>
 	</div>
 	</div>
+	<h2>Goals</h2>
+	<p>These are my goals.</p>
 	</body>
 </html>
