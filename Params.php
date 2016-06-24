@@ -23,11 +23,12 @@
 			<h2>Hello!</h2>
 			<br><br>
 			<div id="form">
-			<form action="action.php" method="get"><br><br>
- 			Your name: <input type="text" name="name" /><br><br>
- 			Your age: <input type="text" name="age" /><br><br>
+			<form action="action.php" method="get"><br>
+ 			Your name: <input type="text" name="name" /><br>
+ 			Your age: <input type="text" name="age" /><br>
  			<input type="submit" />
 			</form>
+			<br><br>
 			</div>
 			<?php echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';?>
 	</body>
