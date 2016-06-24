@@ -30,6 +30,5 @@
 			</form>
 			<br><br>
 			</div>
-			<?php echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';?>
 	</body>
 </html>

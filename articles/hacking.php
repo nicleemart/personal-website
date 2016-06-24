@@ -6,7 +6,7 @@
 	<link href="../style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<div id="" = "flex-container">
+		<div id="flex-container">
 		<div id="flex1">
 		<?php include("../header.php"); ?>
 		</div>

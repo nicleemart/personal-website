@@ -76,6 +76,7 @@ a:hover {
 }
 #Greeting {
 	font-size: 24px;
+	font-weight: bold;
 	position: absolute;
 	top: 20px;
 	left: 260px;

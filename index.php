@@ -26,7 +26,9 @@ date_default_timezone_set("America/Chicago");
 $Hour = date("G");
 if ( $Hour >= 5 && $Hour <= 10 ) {
     echo "Mornin', sunshine.";
-} else if ( $Hour >= 11 && $Hour <= 18 ) {
+} else if ( $Hour >= 11 && $Hour <= 13 ) {
+    echo "Lunch break!";
+} else if ( $Hour >= 13 && $Hour <= 18 ) {
     echo "Why, hello there.";
 } else if ( $Hour >= 19 || $Hour <= 4 ) {
     echo "Meow.";
