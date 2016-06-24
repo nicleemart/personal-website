@@ -1,17 +1,13 @@
 	<div id="navigation">
 	<ul>
-		<li><strong><font size=4>Navigation</font></strong></li>
+		<li><div class="navheader">Navigation</div></li>
 		<li<?php if ($thisPage=="Index") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "index.php" ?>">Home</a></li>
 		<li<?php if ($thisPage=="Goals") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "goals.php" ?>">Goals</a></li>
 		<li<?php if ($thisPage=="Dog") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "dog.php" ?>">Meet Rooster</a></li>
+		<li<?php if ($thisPage=="Params") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "Params.php" ?>">Params</a></li>
 		<br>
-		<li><strong><font size=4>Articles</font></strong></li>
-		<li><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
-		<li><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>
-		<br>
-		<li><strong><font size=4>Personal Sites</font></strong></li>
-		<li><a href="https://www.facebook.com/nikki.lee.martin" target="_blank">Facebook</a></li>
-		<li><a href="https://www.linkedin.com/in/nikki-martin-7b9645a2" target="_blank">LinkedIn</a></li>
-		<li><a href="https://github.com/nicleemart" target="_blank">GitHub</a></li>
+		<li><div class="navheader">Articles</div></li>
+		<li<?php if ($thisPage=="Hacking") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
+		<li<?php if ($thisPage=="Web") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>
 	</ul>
 	</div>

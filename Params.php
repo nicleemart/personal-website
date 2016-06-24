@@ -1,10 +1,10 @@
-<?php $thisPage="Index"; ?>
+<?php $thisPage="Params"; ?>
 <?php $directory_prefix=""; ?>
 <?php $theme="default"; ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Nikki</title>
+		<title>Params</title>
 <?php if ($theme == "default"){ ?>
     <link rel="stylesheet" type="text/css" href="style.css">
 <?php } else { ?>
@@ -21,7 +21,6 @@
 	</div>
 	</div>
 			<h2>Hello!</h2>
-			<p>My name is Nikki. I grew up in rural Southwestern Iowa and currently live in Omaha, Nebraska. I really enjoy traveling, especially abroad. In my free time, I like to cook, read, play video games and hang out with my dog.</p>
 			<br><br>
 			<div id="form">
 			<form action="action.php" method="get"><br><br>
