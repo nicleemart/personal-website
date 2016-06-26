@@ -9,5 +9,6 @@
 		<li><div class="navheader">Articles</div></li>
 		<li<?php if ($thisPage=="Hacking") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
 		<li<?php if ($thisPage=="Web") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>
+		<li<?php if ($thisPage=="Paths") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/paths.php" ?>">PHP and Paths</a></li>
 	</ul>
 		</div>
