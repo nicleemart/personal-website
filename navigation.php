@@ -1,4 +1,4 @@
-	<div id="navigation">
+<div id="navigation">
 	<ul>
 		<li><div class="navheader">Navigation</div></li>
 		<li<?php if ($thisPage=="Index") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "index.php" ?>">Home</a></li>
@@ -10,4 +10,4 @@
 		<li<?php if ($thisPage=="Hacking") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
 		<li<?php if ($thisPage=="Web") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>
 	</ul>
-	</div>
+		</div>
