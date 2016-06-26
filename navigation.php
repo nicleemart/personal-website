@@ -10,5 +10,6 @@
 		<li<?php if ($thisPage=="Hacking") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></li>
 		<li<?php if ($thisPage=="Web") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/web.php" ?>">About the Web</a></li>
 		<li<?php if ($thisPage=="Paths") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/paths.php" ?>">PHP and Paths</a></li>
+		<li<?php if ($thisPage=="HTMLDoc") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/htmldoc.php" ?>">HTML Doc Tags</a></li>
 	</ul>
 		</div>

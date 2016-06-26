@@ -56,11 +56,11 @@ p {
 	font-size: 18px;
 }
 a:link {
-	color: #73626E;
+	color: White;
 	text-decoration: none;
 }
 a:visited {
-	color: white;
+	color: #73626E;
 	text-decoration: none;
 }
 a:hover {

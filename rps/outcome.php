@@ -25,3 +25,4 @@ Player two chose <?php echo htmlspecialchars($_GET["two"]); ?>!<br><br>
 		else if ($_GET["one"]=="paper" && ($_GET["two"]=="scissors"))
 			{echo "Player 2 wins!";} ?>
 	</body>
+</html>
