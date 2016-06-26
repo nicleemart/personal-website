@@ -25,11 +25,16 @@
 				- articles/<br>
   				- hacking.php<br>
   				- web.php<br><br>
-  				If I want to link to my goals page from my home page, index.php, there are a few different ways I can access that link depending on what I want to do with it.<br><br>
-  				&lt;a href="goals.php"&gt;Goals&lt;/a&gt;<br>
-				&lt;a href="/goals.php"&gt;Goals&lt;/a&gt;<br>
-				&lt;a href="../goals.php"&gt;Goals&lt;/a&gt;<br>
-				&lt;a href="http://localhost:8888/personal_website/goals.php"&gt;Goals&lt;/a&gt;
+  				If I want to link to my goals page from my home page, index.php, there are a few different ways I can access that link depending on what I want to do with it.
+  				<ol>
+  				<li>&lt;a href="goals.php"&gt;Goals&lt;/a&gt;</li>
+				<li>&lt;a href="/goals.php"&gt;Goals&lt;/a&gt;</li>
+				<li>&lt;a href="../goals.php"&gt;Goals&lt;/a&gt;</li>
+				<li>&lt;a href="http://localhost:8888/personal_website/goals.php"&gt;Goals&lt;/a&gt;</li>
+				</ol>
+				Numbers one through three are all known as relative paths. These paths will all take you somewhere relative to where you are currently located. From index, one will take you to straight to the goals page, as it is located in the same folder. Two . Three is used to move up a folder. In the case of moving from the index, there is nowhere else to go. The fourth link is an absolute link, which you can tell by the &quot;http://&quot;. No matter what page you are on, number four will always take you to the goals.php through the local server.<br><br>
+				I will now move to articles/hacking.php and explain how these links would function from there. From this page, number one would attempt to take you to &quot;articles/goals.php&quot;, since this path only works within one folder. Unfortunately, that page does not exist. Number two . Number three would work this time- as &quot;../&quot; indicates moving up a folder. Number four would function in the same way because it is absolute and not relative.
+				</ol>
 				</p>
 			</div>
 		</div>
