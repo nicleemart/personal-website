@@ -1,21 +1,8 @@
-<!DOCTYPE html>
+<?php $title="Link Paths and PHP"; ?>
 <?php $thisPage="Paths"; ?>
 <?php $directory_prefix="../"; ?>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Paths and PHP</title>
-			<link href="../style.css" type="text/css" rel="stylesheet" />
-	</head>
-	<body>
-		<div id="flex-container">
-			<div id="flex1">
-				<?php include("../header.php"); ?>
-			</div>
-			<div id="flex2">
-				<?php include("../navigation.php"); ?>
-			</div>
-			<div id="flex3">
+<?php include ("../includes/top.php"); ?>
+
 				<h2>Paths and PHP</h2>
 				<h3>Links</h3>
 				<p>Within a website, links work differently depending on where they are on that site and the different paths used to access them. Given the file structure below, I will explore some of the different ways in which links work.<br><br>
@@ -46,9 +33,8 @@
 				<li>&lt;?php include("../navigation.php"); ?&gt;</li>
 				</ol>
 				These are all still relative links. Number one will include navigation.php as they are in the same folder, meaning they are relative to each other. Number two . Number three will move up a folder from index. Since navigation.php is not located there, the file won't work since it doesn't exist in that context.<br><br>
-				Navigation.php is also accessed through articles.hacking.php. In this situation, number one would not work as it would be searching for navigation.php relative to hacking within the articles subfolder. Number two . Number three would however work as intended, with the navigation page functioning properly since &quot;../&quot; allowed us to go back from the subfolder.
+				Navigation.php is also accessed through articles.hacking.php. In this situation, number one would not work as it would be searching for navigation.php relative to hacking within the articles subfolder. Number two . Number three would however work as intended, with the navigation page functioning properly since &quot;../&quot; allowed us to go back from the subfolder.<br><br>
+				Localhost vs server
 				</p>
-			</div>
-		</div>
-	</body>
-</html>
+
+<?php include ("../includes/bottom.php"); ?>
