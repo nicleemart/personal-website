@@ -11,6 +11,7 @@
 		<li<?php if ($thisPage=="Paths") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/paths.php" ?>">PHP and Paths</a></li>
 		<li<?php if ($thisPage=="HTMLDoc") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "articles/htmldoc.php" ?>">HTML Doc Tags</a>
 		<li><div class="navheader">Projects</div></li>
-		<li<?php if ($thisPage=="RPS") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "projects/rps/index.php" ?>">Rock, Paper, Scissors</a></li></li>
+		<li<?php if ($thisPage=="RPS") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "projects/rps/index.php" ?>">Rock, Paper, Scissors</a></li>
+		<li<?php if ($thisPage=="TTT") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "projects/ttt/ttt.php" ?>">Tic Tac Toe</a></li>
 	</ul>
 		</div>

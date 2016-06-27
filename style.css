@@ -5,38 +5,35 @@ body {
 	background-color: #F0B49E;
 }
 #flex-container {
-    flex-direction: column;
-    background-color: Green;
+    background-color: #B38184;
+    display: -webkit-flex;
     display: flex;
-  	width: 100%;
-  	height: 100vh;
 }
 #flex1 {
 	background-color: #F7E4BE;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	flex-flow: column;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	justify-content: center;
 	align-items: center;
 	width: 240px;
 	height: 100px;
 }
+#sidebar {
+	flex-flow: column;
+	width: 240px;
+	height: 100vh;
+}
 #flex2 {
     background-color: #B38184;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-	flex-flow: column;
 	align-items: left;
 	text-align: left;
     width: 240px;
-    height: 100vh;
+    height: 100%;
  }
  #flex3 {
  	background-color: #F0B49E;
+ 	padding-left: 10px;
  	flex-flow: column;
- 	padding-left: 260px;
  	height: 100%;
  }
  #navigation ul {
@@ -46,11 +43,6 @@ body {
  .navheader {
  	font-weight: bold;
  	font-size: 20px;
- }
- #images {
- 	position: absolute;
- 	top: 60px;
- 	left: 55px;
  }
 p {
 	font-size: 18px;
