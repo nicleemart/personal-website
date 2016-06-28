@@ -1,3 +1,5 @@
+<!-- Greets the user with specific greeting based on time -->
+
 <?php 
 
 function greeting(){
@@ -15,6 +17,12 @@ date_default_timezone_set("America/Chicago");
     return "Meow.";} 
 }
 ?>
+
+<!-- Determines outcome in a rock, paper, scissors match
+
+String of specific characters (rock, paper or scissors) to determine outcome of match
+
+Outcome of match (Player 1 wins, Player 2 Wins or tie) -->
 
 <?php
 
