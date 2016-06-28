@@ -2,6 +2,7 @@
 <?php $thisPage="RPS"; ?>
 <?php $directory_prefix="../../"; ?>
 <?php include ("../../includes/top.php"); ?>
+<?php include ("../../includes/functions.php"); ?>
 
 		<h2>Play Rock, Paper, Scissors</h2>
 		<p>Enter rock, paper or scissors.</p>

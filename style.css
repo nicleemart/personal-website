@@ -2,10 +2,10 @@ body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #413E4A;
 	font-size: 18px;
-	background-color: #F0B49E;
+	background-color: Navy;
 }
 #flex-container {
-    background-color: #B38184;
+    background-color: #F0B49E;
     display: -webkit-flex;
     display: flex;
 }
@@ -21,20 +21,18 @@ body {
 #sidebar {
 	flex-flow: column;
 	width: 240px;
-	height: 100vh;
 }
 #flex2 {
     background-color: #B38184;
-	align-items: left;
-	text-align: left;
+    padding-top: 10px;
     width: 240px;
-    height: 100%;
+    height: 100vh;
  }
  #flex3 {
  	background-color: #F0B49E;
- 	padding-left: 10px;
  	flex-flow: column;
- 	height: 100%;
+ 	padding-left: 15px;
+ 	height: 100vh;
  }
  #navigation ul {
  	list-style: none;
@@ -43,9 +41,6 @@ body {
  .navheader {
  	font-weight: bold;
  	font-size: 20px;
- }
-p {
-	font-size: 18px;
 }
 a:link {
 	color: White;
