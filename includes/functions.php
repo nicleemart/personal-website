@@ -52,20 +52,23 @@ function rps ($One, $Two){
 
 <?php
 	function checkWin ($arr){
+	//8 win scenarios go here- conditional statments. If there is no winner, move to checkTurn
 		$arr[0]
 	}
 
 	function checkTurn ($arr){
-
+	//Loop through $arr to determine if there are more x's or o's. Return a numerica value indiciating whose turn it is.
+		foreach ()
 	}
 
 	function spaces($arr, $square){
-//Return X/O/Blank based on users choice. If user has not chosen a value, return blank, else return their 
+	//Return X/O/Blank based on users choice. If user has not chosen a value, return blank.
+		$square = [0, 1, 2]
 		if($arr[$square]=="1"){
-			echo 'X';
+			echo "X";
 		}
 		elseif($arr[$square] == "2"){
-			echo 'O';
+			echo "O";
 		}
 
 	}
