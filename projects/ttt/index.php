@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		<div class="row">
 			<div class="cell">
-				<?php echo [$square] ?>
+				<a href="<?php echo htmlspecialchars($_GET["$game"], $_GET["$square"]); ?>"X</a>
 			</div>
 			<!-- <div class="cell">
 				1
