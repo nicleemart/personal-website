@@ -24,6 +24,7 @@ function rps ($One, $Two){
 	$P1 = "Player 1 wins!";
 	$P2 = "Player 2 wins!";
 	$Tie = "It's a tie!";
+	
 	$One = strtolower($One);
 	$Two = strtolower($Two);
 	
@@ -47,4 +48,25 @@ function rps ($One, $Two){
 			{return $P2;}
 	else {return "$One and $Two are not valid choices. Please try again.";}
 }
+?>
+
+<?php
+	function checkWin ($arr){
+		$arr[0]
+	}
+
+	function checkTurn ($arr){
+
+	}
+
+	function spaces($arr, $square){
+//Return X/O/Blank based on users choice. If user has not chosen a value, return blank, else return their 
+		if($arr[$square]=="1"){
+			echo 'X';
+		}
+		elseif($arr[$square] == "2"){
+			echo 'O';
+		}
+
+	}
 ?>
