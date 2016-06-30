@@ -17,7 +17,6 @@
 		$x = 0;
 		$xCount = 0;
 		$oCount = 0;
-		$game = "";
 
 		while ($x < strlen($game)){
 
@@ -30,20 +29,23 @@
 			$x++;
 		}
 
-		if ($xCount > $oCount)
-			{return 1;}
-		else {return 2;}
+		if ($xCount > $oCount){
+			return 2;
+		}
+		else {
+			return 1;
+		}
 	}
 
 
 	function checkSpaces($game, $square, $turn){
 	//Return X/O/Blank based on users choice. If user has not chosen a value, return blank
 
-		if($game[$square]=="0"){
+		if($game[$square] == "0"){
 			$game[$square] = $turn;
 			echo "<a href=index.php?game=" . $game . ">#</a>";
 		}
-		if($game[$square]=="1"){
+		elseif($game[$square] == "1"){
 			echo "X";
 		}
 		elseif($game[$square] == "2"){

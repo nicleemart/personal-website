@@ -13,10 +13,10 @@
 	<div class="board">
 		<div class="row">
 			<div class="cell">
-			 <?php checkSpaces($game, 0, $turn )?>
+			 <?php checkSpaces($game, 0, $turn)?>
 			</div>
 			<div class="cell">
-			 <?php checkSpaces($game, 1, $turn )?>
+			 <?php checkSpaces($game, 1, $turn)?>
 			</div>
 			<div class="cell">
 			 <?php checkSpaces($game, 2, $turn) ?>
@@ -44,6 +44,7 @@
 				<?php checkSpaces($game, 8, $turn) ?>
 			</div> 
 		</div>
+		<a href="?game=000000000">Reset</a>
 	</div>
 			
 
