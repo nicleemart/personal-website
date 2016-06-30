@@ -10,7 +10,7 @@
 		$turn = checkTurn($game);
 	?>
 
-	<div class="wrapper">
+	<div class="board">
 		<div class="row">
 			<div class="cell">
 			 <?php checkSpaces($game, 0, $turn )?>

@@ -13,10 +13,11 @@
 	}
 
 	function checkTurn ($game){
-	//Loop through $arr to determine if there are more x's or o's. Return a numerical value indiciating whose turn it is.
+	//Loop through $game to determine if there are more x's or o's. Return a numerical value indiciating whose turn it is.
 		$x = 0;
 		$xCount = 0;
 		$oCount = 0;
+		$game = "";
 
 		while ($x < strlen($game)){
 
@@ -30,16 +31,17 @@
 		}
 
 		if ($xCount > $oCount)
-			{return "1";}
-		else {return "2";}
+			{return 1;}
+		else {return 2;}
 	}
 
 
 	function checkSpaces($game, $square, $turn){
-	//Return X/O/Blank based on users choice. If user has not chosen a value, return blank.
+	//Return X/O/Blank based on users choice. If user has not chosen a value, return blank
+
 		if($game[$square]=="0"){
 			$game[$square] = $turn;
-			echo "<a href=index.php?game=" . $game . ">Click me!</a>";
+			echo "<a href=index.php?game=" . $game . ">#</a>";
 		}
 		if($game[$square]=="1"){
 			echo "X";
