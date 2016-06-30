@@ -43,7 +43,7 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	color: Purple;
+	color: purple;
 	text-decoration: none;
 }
 #navigation #currentpage a{
@@ -51,7 +51,7 @@ a:hover {
 	text-decoration: none;
 	font-weight: bold;
 }
-.board{
+.board {
 	background-color: black;
 	padding-top: 10px;
 	padding-left: 10px;

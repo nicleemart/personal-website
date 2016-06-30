@@ -10,6 +10,16 @@
 			$win[5] = $game[2] . $game[5] . $game[8];
 			$win[6] = $game[0] . $game[4] . $game[8];
 			$win[7] = $game[2] . $game[4] . $game[6];
+
+			foreach ($win as &$value) {
+
+			if ($value == "111"){
+				return "X wins!";
+			}
+			elseif ($value == "222"){
+				return "O wins!";
+			}
+			}
 	}
 
 	function checkTurn ($game){
@@ -38,19 +48,26 @@
 	}
 
 
-	function checkSpaces($game, $square, $turn){
+	function checkSpaces($game, $square, $turn, $gameStatus){
 	//Return X/O/Blank based on users choice. If user has not chosen a value, return blank
-
-		if($game[$square] == "0"){
-			$game[$square] = $turn;
-			echo "<a href=index.php?game=" . $game . ">#</a>";
-		}
-		elseif($game[$square] == "1"){
+		
+		if($game[$square] == "1"){
 			echo "X";
 		}
 		elseif($game[$square] == "2"){
 			echo "O";
 		}
+		elseif($gameStatus == "X wins!" || $gameStatus == "O wins!"){
+			echo "";
+		}
+		elseif($game[$square] == "0"){
+			$game[$square] = $turn;
+			echo "<a href=index.php?game=" . $game . ">#</a>";
+		}
 
+	}
+
+	function printGameStatus($gameStatus){
+		echo "$gameStatus";
 	}
 ?>

@@ -8,38 +8,40 @@
 	<?php 
 		$game = $_GET["game"];
 		$turn = checkTurn($game);
+		$gameStatus = checkWin($game);
 	?>
 
 	<div class="board">
 		<div class="board__square">
-			 <?php checkSpaces($game, 0, $turn)?>
+			 <?php checkSpaces($game, 0, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			 <?php checkSpaces($game, 1, $turn)?>
+			 <?php checkSpaces($game, 1, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			 <?php checkSpaces($game, 2, $turn) ?>
+			 <?php checkSpaces($game, 2, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 3, $turn) ?>
+			<?php checkSpaces($game, 3, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 4, $turn) ?>
+			<?php checkSpaces($game, 4, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 5, $turn) ?>
+			<?php checkSpaces($game, 5, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 6, $turn) ?>
+			<?php checkSpaces($game, 6, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 7, $turn) ?>
+			<?php checkSpaces($game, 7, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">
-			<?php checkSpaces($game, 8, $turn) ?>
+			<?php checkSpaces($game, 8, $turn, $gameStatus) ?>
 		</div> 
 	
-		<a href="?game=000000000">Reset</a>
+		<a href="?game=000000000">Reset</a><br>
+		<?php printGameStatus($gameStatus) ?>
 	</div>
 			
 
