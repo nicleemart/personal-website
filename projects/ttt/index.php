@@ -2,42 +2,47 @@
 <?php $thisPage="TTT"; ?>
 <?php $directory_prefix="../../"; ?>
 <?php include ("../../includes/top.php"); ?>
+<?php include ("game.php"); ?>
 
 	<h2>Play Tic Tac Toe!</h2>
+	<?php 
+		$game = $_GET["game"];
+		$turn = checkTurn($game);
+	?>
 
 	<div class="wrapper">
 		<div class="row">
 			<div class="cell">
-				<a href="<?php echo htmlspecialchars($_GET["$game"], $_GET["$square"]); ?>"X</a>
-			</div>
-			<!-- <div class="cell">
-				1
+			 <?php checkSpaces($game, 0, $turn )?>
 			</div>
 			<div class="cell">
-				2
+			 <?php checkSpaces($game, 1, $turn )?>
+			</div>
+			<div class="cell">
+			 <?php checkSpaces($game, 2, $turn) ?>
 			</div>
 		</div>
 		<div class="row">
 			<div class="cell">
-				3
+				<?php checkSpaces($game, 3, $turn) ?>
 			</div>
 			<div class="cell">
-				4
+				<?php checkSpaces($game, 4, $turn) ?>
 			</div>
 			<div class="cell">
-				5
+				<?php checkSpaces($game, 5, $turn) ?>
 			</div>
 		</div>
 		<div class="row">
 			<div class="cell">
-				6
+				<?php checkSpaces($game, 6, $turn) ?>
 			</div>
 			<div class="cell">
-				7
+				<?php checkSpaces($game, 7, $turn) ?>
 			</div>
 			<div class="cell">
-				8
-			</div> -->
+				<?php checkSpaces($game, 8, $turn) ?>
+			</div> 
 		</div>
 	</div>
 			
