@@ -1,37 +1,29 @@
 body {
+	padding: 0;
+	margin: 0;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #413E4A;
 	font-size: 18px;
 	background-color: Navy;
 }
-#flex-container {
+.main{
     background-color: #F0B49E;
     display: -webkit-flex;
-    display: flex;
 }
-#flex1 {
+.main__header{
 	background-color: #F7E4BE;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	justify-content: center;
-	align-items: center;
-	width: 240px;
-	height: 100px;
-}
-#sidebar {
-	flex-flow: column;
+	padding-top: 15px;
 	width: 240px;
 }
-#flex2 {
+.main__nav{
     background-color: #B38184;
-    padding-top: 10px;
     width: 240px;
     height: 100vh;
  }
- #flex3 {
+ .main__body{
  	background-color: #F0B49E;
- 	flex-flow: column;
- 	padding-left: 15px;
+/* 	flex-flow: column;*/
+/* 	padding-left: 250px;*/
  	height: 100vh;
  }
  #navigation ul {
@@ -43,7 +35,7 @@ body {
  	font-size: 20px;
 }
 a:link {
-	color: White;
+	color: white;
 	text-decoration: none;
 }
 a:visited {
@@ -60,19 +52,16 @@ a:hover {
 	font-weight: bold;
 }
 .board{
-	background-color: Black;
+	background-color: black;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 45px;
 	width: 279px;
 	height: 279px;
-} 
-.row {
-	width: 279px;
 }
-.cell {
-	background-color: skyBlue;
+.board__square {
+	background-color: skyblue;
 	display: inline-block;
 	height: 90px;
 	width: 90px;

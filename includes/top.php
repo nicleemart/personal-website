@@ -7,13 +7,11 @@
 			<link href="<?php echo "$directory_prefix" . "style.css" ?>" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<div id="flex-container">
-			<div id="sidebar">
-				<div id="flex1">
+		<div class="main">
+			<div class="main__nav">
+				<div class="main__header">
 					<?php include("header.php"); ?>
 				</div>
-				<div id="flex2">
-					<?php include("navigation.php"); ?>
-				</div>
+				<?php include("navigation.php"); ?>
 			</div>
-			<div id="flex3">
+			<div id="main__body">
