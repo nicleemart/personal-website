@@ -1,4 +1,4 @@
-<div id="navigation">
+<div class="navigation">
 	<ul>
 		<li><div class="navheader">Navigation</div></li>
 		<li<?php if ($thisPage=="Index") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "index.php" ?>">Home</a></li>

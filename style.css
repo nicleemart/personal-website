@@ -26,13 +26,18 @@ body {
 /* 	padding-left: 250px;*/
  	height: 100vh;
  }
- #navigation ul {
+ .navigation ul {
  	list-style: none;
  	text-align: left;
  }
  .navheader {
  	font-weight: bold;
  	font-size: 20px;
+}
+.navigation #currentpage a{
+	color: #C5E0DC;
+	text-decoration: none;
+	font-weight: bold;
 }
 a:link {
 	color: white;
@@ -46,11 +51,6 @@ a:hover {
 	color: purple;
 	text-decoration: none;
 }
-#navigation #currentpage a{
-	color: #C5E0DC;
-	text-decoration: none;
-	font-weight: bold;
-}
 .board {
 	background-color: black;
 	padding-top: 10px;
@@ -58,11 +58,21 @@ a:hover {
 	padding-right: 10px;
 	padding-bottom: 45px;
 	width: 279px;
-	height: 279px;
+	height: 379px;
 }
 .board__square {
 	background-color: skyblue;
 	display: inline-block;
+	font-size: 80px;
 	height: 90px;
 	width: 90px;
+}
+.board__square a:link{
+	color: skyblue;
+}
+.board__square a:visited{
+	color: skyblue;
+}
+.board__text {
+	font-size: 20px;
 }
