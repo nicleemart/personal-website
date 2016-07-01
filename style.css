@@ -18,24 +18,24 @@ a:hover {
 	color: purple;
 	text-decoration: none;
 }
-.main{
+.main {
     background-color: #F0B49E;
     display: -webkit-flex;
 }
-.main__header{
+.main__header {
 	background-color: #F7E4BE;
 	padding-top: 15px;
 	width: 240px;
 }
-.main__nav{
+.main__nav {
     background-color: #B38184;
     width: 240px;
     height: 100vh;
  }
- .main__body{
+ .main__body {
  	background-color: #F0B49E;
- 	height: 100vh;
- 	margin-left: 250px;
+ 	height: 100%;
+ 	margin-left: 25px;
  }
  .navigation ul {
  	list-style: none;

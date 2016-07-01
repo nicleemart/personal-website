@@ -14,4 +14,4 @@
 				</div>
 				<?php include("navigation.php"); ?>
 			</div>
-			<div id="main__body">
+			<div class="main__body">
