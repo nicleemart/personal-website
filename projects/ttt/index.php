@@ -39,8 +39,9 @@
 		<div class="board__square">
 			<?php checkSpaces($game, 8, $turn, $gameStatus) ?>
 		</div> 
-		<div class="board__text">
-			<br>
+	</div>
+	<div class="results">
+		<div class="results__text">
 			<a href="?game=000000000">Reset Game</a><br>
 			<?php printGameStatus($gameStatus) ?>
 		</div>

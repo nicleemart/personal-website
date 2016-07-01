@@ -7,7 +7,7 @@ body {
 	background-color: navy;
 }
 a:link {
-	color: white;
+	color: #EB8B7F;
 	text-decoration: none;
 }
 a:visited {
@@ -15,25 +15,27 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	color: purple;
+	color: #633D2E;
 	text-decoration: none;
 }
 .main {
-    background-color: #F0B49E;
+    background-color: #9CDDC8;
     display: -webkit-flex;
 }
 .main__header {
-	background-color: #F7E4BE;
+	background-color: #C1C99F;
 	padding-top: 15px;
 	width: 240px;
 }
+.header__images {
+}
 .main__nav {
-    background-color: #B38184;
+    background-color: #DDD9AB;
     width: 240px;
     height: 100vh;
  }
  .main__body {
- 	background-color: #F0B49E;
+ 	background-color: #9CDDC8;
  	height: 100%;
  	margin-left: 25px;
  }
@@ -45,35 +47,46 @@ a:hover {
  	font-size: 20px;
 }
 .navigation #currentpage a{
-	color: #C5E0DC;
+	color: #F7AF63;
 	text-decoration: none;
 	font-weight: bold;
 }
 .board {
-	background-color: black;
+	background-color: #87BDB1;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 290px;
-	height: 450px;
+	width: 285px;
+	height: 300px;
+	color: #EEE6AB;
 }
 .board__square {
-	background-color: skyblue;
+	background-color: #44B8B6;
 	display: inline-block;
 	font-size: 90px;
 	height: 90px;
 	width: 90px;
 	border-style: solid;
-	border-color: black;
+	border-width: 3px;
+	border-color: #87BDB1;
 	float: left;
 }
 .board__square a:link {
-	color: skyblue;
+	color: #44B8B6;
 }
 .board__square a:visited {
-	color: skyblue;
+	color: #44B8B6;
 }
-.board__text {
+.results {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 200px;
+	width: 285px;
+	background-color: #45484B;
+}
+.results__text {
 	font-size: 20px;
 	color: white;
+/*	background-color: skyblue;*/
 }
