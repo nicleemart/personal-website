@@ -4,7 +4,19 @@ body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: #413E4A;
 	font-size: 18px;
-	background-color: Navy;
+	background-color: navy;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: #73626E;
+	text-decoration: none;
+}
+a:hover {
+	color: purple;
+	text-decoration: none;
 }
 .main{
     background-color: #F0B49E;
@@ -22,9 +34,8 @@ body {
  }
  .main__body{
  	background-color: #F0B49E;
-/* 	flex-flow: column;*/
-/* 	padding-left: 250px;*/
  	height: 100vh;
+ 	margin-left: 250px;
  }
  .navigation ul {
  	list-style: none;
@@ -39,40 +50,34 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 }
-a:link {
-	color: white;
-	text-decoration: none;
-}
-a:visited {
-	color: #73626E;
-	text-decoration: none;
-}
-a:hover {
-	color: purple;
-	text-decoration: none;
-}
 .board {
 	background-color: black;
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 45px;
-	width: 279px;
-	height: 379px;
+	width: 300px;
+	height: 450px;
 }
 .board__square {
 	background-color: skyblue;
 	display: inline-block;
-	font-size: 80px;
+	font-size: 90px;
 	height: 90px;
 	width: 90px;
+	border-style: solid;
+	border-color: black;
 }
-.board__square a:link{
+.board__square a:link {
 	color: skyblue;
 }
-.board__square a:visited{
+.board__square a:visited {
 	color: skyblue;
 }
+/*.board__square a:hover {
+	color: white;
+	opacity: 0.5;
+}*/
 .board__text {
 	font-size: 20px;
+	color: white;
 }
