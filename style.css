@@ -39,7 +39,6 @@ a:hover {
  }
  .navigation ul {
  	list-style: none;
- 	text-align: left;
  }
  .navheader {
  	font-weight: bold;
@@ -55,7 +54,7 @@ a:hover {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 300px;
+	width: 290px;
 	height: 450px;
 }
 .board__square {
@@ -66,6 +65,7 @@ a:hover {
 	width: 90px;
 	border-style: solid;
 	border-color: black;
+	float: left;
 }
 .board__square a:link {
 	color: skyblue;
@@ -73,10 +73,6 @@ a:hover {
 .board__square a:visited {
 	color: skyblue;
 }
-/*.board__square a:hover {
-	color: white;
-	opacity: 0.5;
-}*/
 .board__text {
 	font-size: 20px;
 	color: white;
