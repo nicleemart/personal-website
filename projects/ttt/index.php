@@ -42,7 +42,9 @@
 	</div>
 	<div class="results">
 		<div class="results__text">
-			<a href="?game=000000000">Reset Game</a><br>
+			<a href="?game=000000000">Reset Game</a>
+		</div><br>
+		<div class="results__text">
 			<?php printGameStatus($gameStatus) ?>
 		</div>
 	</div>

@@ -32,7 +32,7 @@ a:hover {
 .main__nav {
     background-color: #DDD9AB;
     width: 240px;
-    height: 100vh;
+    min-height: 100vh;
  }
  .main__body {
  	background-color: #9CDDC8;
@@ -59,6 +59,7 @@ a:hover {
 	width: 285px;
 	height: 300px;
 	color: #EEE6AB;
+	text-align: center;
 }
 .board__square {
 	background-color: #44B8B6;
@@ -83,10 +84,10 @@ a:hover {
 	padding-right: 10px;
 	height: 200px;
 	width: 285px;
-	background-color: #45484B;
+	background-color: #696758;
 }
 .results__text {
 	font-size: 20px;
 	color: white;
-/*	background-color: skyblue;*/
+	background-color: #45484B;
 }

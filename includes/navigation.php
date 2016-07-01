@@ -14,4 +14,4 @@
 		<li<?php if ($thisPage=="RPS") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "projects/rps/index.php" ?>">Rock, Paper, Scissors</a></li>
 		<li<?php if ($thisPage=="TTT") {echo " id=\"currentpage\"";} ?>><a href="<?php echo "$directory_prefix" . "projects/ttt/index.php?game=000000000" ?>">Tic Tac Toe</a></li>
 	</ul>
-		</div>
+</div>
