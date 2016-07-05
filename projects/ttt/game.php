@@ -14,9 +14,11 @@
 			foreach ($win as &$value) {
 
 			if ($value == "111"){
+				$_SESSION["xwins"]++;
 				return "X wins!";
 			}
 			elseif ($value == "222"){
+				$_SESSION["owins"]++;
 				return "O wins!";
 			}
 			}
@@ -27,6 +29,9 @@
 		$x = 0;
 		$xCount = 0;
 		$oCount = 0;
+
+		$_SESSION["xwins"] = 0;
+		$_SESSION["owins"] = 0;
 
 		while ($x < strlen($game)){
 
@@ -67,7 +72,16 @@
 
 	}
 
+	function session(){
+		if(empty($_SESSION)){
+			$_SESSION["xwins"]=0;
+			$_SESSION["owins"]=0;
+		}
+	}
+
 	function printGameStatus($gameStatus){
-		echo "$gameStatus";
+
+		echo "X: " . $_SESSION["xwins"] ." - O: ". $_SESSION["owins"];
+		echo "\n$gameStatus";
 	}
 ?>

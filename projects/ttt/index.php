@@ -3,12 +3,16 @@
 <?php $directory_prefix="../../"; ?>
 <?php include ("../../includes/top.php"); ?>
 <?php include ("game.php"); ?>
+<?php 
+	session_start(); 
+	?>
 
 	<h2>Play Tic Tac Toe!</h2>
 	<?php 
 		$game = $_GET["game"];
 		$turn = checkTurn($game);
 		$gameStatus = checkWin($game);
+		session ();
 	?>
 
 	<div class="board">
@@ -46,7 +50,9 @@
 		</div><br>
 		<div class="results__text">
 			<?php printGameStatus($gameStatus) ?>
-		</div>
+		</div><br><div class="results__text">
+			<?php session_register() ?>
+		</div><br>
 	</div>
 			
 
