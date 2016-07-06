@@ -1,11 +1,12 @@
+<?php 
+  session_start();
+	?>
+
 <?php $title="Tic Tac Toe"; ?>
 <?php $thisPage="TTT"; ?>
 <?php $directory_prefix="../../"; ?>
 <?php include ("../../includes/top.php"); ?>
 <?php include ("game.php"); ?>
-<?php 
-  session_start();
-	?>
 
 	<h2>Play Tic Tac Toe!</h2>
 	<?php
