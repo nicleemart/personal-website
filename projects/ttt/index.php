@@ -4,15 +4,21 @@
 <?php include ("../../includes/top.php"); ?>
 <?php include ("game.php"); ?>
 <?php 
-	session_start(); 
+  session_start();
 	?>
 
 	<h2>Play Tic Tac Toe!</h2>
-	<?php 
+	<?php
+		if ($_GET["reset"]){
+			resetSession();
+		}
 		$game = $_GET["game"];
+		if (empty($game)){
+			$game = "000000000";
+		}
 		$turn = checkTurn($game);
 		$gameStatus = checkWin($game);
-		session ();
+		startSession();
 	?>
 
 	<div class="board">
@@ -50,8 +56,12 @@
 		</div><br>
 		<div class="results__text">
 			<?php printGameStatus($gameStatus) ?>
-		</div><br><div class="results__text">
-			<?php session_register() ?>
+		</div><br>
+		<div class="results__text">
+			<?php printSession() ?>
+		</div><br>
+		<div class="results__text">
+			<a href="index.php?reset=true">Clear Score</a>
 		</div><br>
 	</div>
 			

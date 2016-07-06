@@ -30,9 +30,6 @@
 		$xCount = 0;
 		$oCount = 0;
 
-		$_SESSION["xwins"] = 0;
-		$_SESSION["owins"] = 0;
-
 		while ($x < strlen($game)){
 
 		if ($game[$x] == "1"){
@@ -72,16 +69,26 @@
 
 	}
 
-	function session(){
-		if(empty($_SESSION)){
+	function startSession(){
+		if ($_SESSION["xwins"] > 0 || $_SESSION["owins"]> 0){
+
+		}
+		elseif(empty($_SESSION)){
 			$_SESSION["xwins"]=0;
 			$_SESSION["owins"]=0;
+			$_SESSION["reset"] = false;
 		}
 	}
 
-	function printGameStatus($gameStatus){
-
+	function printSession(){
 		echo "X: " . $_SESSION["xwins"] ." - O: ". $_SESSION["owins"];
-		echo "\n$gameStatus";
+	}
+
+	function resetSession(){
+		$_SESSION=null;
+	}
+
+	function printGameStatus($gameStatus){
+		echo "$gameStatus";
 	}
 ?>
