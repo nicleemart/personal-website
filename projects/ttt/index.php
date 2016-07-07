@@ -21,7 +21,9 @@
 		}
 		$turn = checkTurn($game);
 		$gameStatus = checkWin($game);
+		$gameStatus = checkTie($game, $gameStatus);
 		startSession();
+		storeCurrentGame($game);
 	?>
 
 	<h2>Play Tic Tac Toe!</h2>

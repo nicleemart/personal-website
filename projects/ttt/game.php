@@ -14,14 +14,36 @@
 			foreach ($win as &$value) {
 
 			if ($value == "111"){
-				$_SESSION["xwins"]++;
+				incrementSessionCounter("xwins");
+				storePastGames();
 				return "X wins!";
 			}
 			elseif ($value == "222"){
-				$_SESSION["owins"]++;
+				incrementSessionCounter("owins");
+				storePastGames();
 				return "O wins!";
 			}
 			}
+	}
+
+	function checkTie ($game, $gameStatus){
+		$hasZero = false;
+
+		for ($i = 0; $i < strlen($game); $i++){
+			if ($game[$i] == "0"){
+				$hasZero = true;
+			}
+		}
+
+		if (!$hasZero && strpos($gameStatus, "wins")==false){
+			storePastGames();
+			incrementSessionCounter("tie");
+			return "It's a tie!";
+		}
+	}
+
+	function incrementSessionCounter($gameOutcome){
+		$_SESSION[$gameOutcome]++;
 	}
 
 	function checkTurn ($game){
@@ -82,6 +104,15 @@
 		fclose($fileConnection);
 	}
 
+	function storePastGames(){
+		$storage = "gameStorage.txt";
+		$fileConnection = file($storage) or die("Error opening file!");
+		$pastGames = "pastGames.txt";
+		$fh = fopen($pastGames, 'a') or die("Error opening file!");
+		fwrite($fh, $fileConnection[0] . "\n");
+		fclose($fh);
+	}
+
 	function startSession(){
 	//Keeps data if session variables are greater than zero. Starts a new session if they are zero.
 		if ($_SESSION["xwins"] > 0 || $_SESSION["owins"]> 0){
@@ -90,13 +121,14 @@
 		elseif(empty($_SESSION)){
 			$_SESSION["xwins"]=0;
 			$_SESSION["owins"]=0;
+			$_SESSION["tie"]=0;
 			$_SESSION["reset"] = false;
 		}
 	}
 
 	function printSession(){
 	//Prints stored session data of X wins and O wins.
-		echo "X: " . $_SESSION["xwins"] ." - O: ". $_SESSION["owins"];
+		echo "X: " . $_SESSION["xwins"] . " - O: " . $_SESSION["owins"] . " Tie: " . $_SESSION["tie"];
 	}
 
 	function resetSession(){
