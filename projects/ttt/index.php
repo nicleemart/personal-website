@@ -1,19 +1,21 @@
-<?php 
-  session_start();
-	?>
+<?php session_start();
+	$title="Tic Tac Toe";
+	$thisPage="TTT";
+	$directory_prefix="../../";
+	include ("../../includes/top.php");
+	include ("game.php");
+?>
 
-<?php $title="Tic Tac Toe"; ?>
-<?php $thisPage="TTT"; ?>
-<?php $directory_prefix="../../"; ?>
-<?php include ("../../includes/top.php"); ?>
-<?php include ("game.php"); ?>
-
-	<h2>Play Tic Tac Toe!</h2>
 	<?php
 		if ($_GET["reset"]){
 			resetSession();
 		}
-		$game = $_GET["game"];
+		if ($_GET["resumegame"]){
+			$game = savedGame();
+		}
+		else {
+			$game = $_GET["game"];
+		}
 		if (empty($game)){
 			$game = "000000000";
 		}
@@ -21,6 +23,8 @@
 		$gameStatus = checkWin($game);
 		startSession();
 	?>
+
+	<h2>Play Tic Tac Toe!</h2>
 
 	<div class="board">
 		<div class="board__square">
@@ -51,19 +55,21 @@
 			<?php checkSpaces($game, 8, $turn, $gameStatus) ?>
 		</div> 
 	</div>
+
 	<div class="results">
 		<div class="results__text">
 			<a href="?game=000000000">Reset Game</a>
 		</div><br>
 		<div class="results__text">
-			<?php printGameStatus($gameStatus) ?>
-		</div><br>
-		<div class="results__text">
 			<?php printSession() ?>
 		</div><br>
 		<div class="results__text">
-			<a href="index.php?reset=true">Clear Score</a>
+			<a href="?reset=true">Clear Score</a>
 		</div><br>
+		<div class="results__text">
+			<a href="?resumegame=true">Resume Game</a>
+		</div>
+		<?php printGameStatus($gameStatus) ?>
 	</div>
 			
 

@@ -1,6 +1,6 @@
 <?php
 	function checkWin ($game){
-	//8 win scenarios go here- conditional statments. If there is no winner, move to checkTurn
+	//Sets up all possible win scenarios and checks for win. Each number represents a square on the board.
 		$win = ["", "", "", "", "", "", "", ""];
 			$win[0] = $game[0] . $game[1] . $game[2];
 			$win[1] = $game[3] . $game[4] . $game[5];
@@ -69,7 +69,21 @@
 
 	}
 
+	function savedGame(){
+		$storage = "gameStorage.txt";
+		$fileConnection = file($storage) or die("Error opening file!");
+		return str_replace("\n", "", $fileConnection[0]) . str_replace("\n", "", $fileConnection[1]).str_replace("\n", "", $fileConnection[2]);
+	}
+
+	function storeCurrentGame($game){
+		$storage = "gameStorage.txt";
+		$fileConnection = fopen($storage, 'w') or die("Error opening file!");
+		fwrite($fileConnection, $game);
+		fclose($fileConnection);
+	}
+
 	function startSession(){
+	//Keeps data if session variables are greater than zero. Starts a new session if they are zero.
 		if ($_SESSION["xwins"] > 0 || $_SESSION["owins"]> 0){
 
 		}
@@ -81,14 +95,17 @@
 	}
 
 	function printSession(){
+	//Prints stored session data of X wins and O wins.
 		echo "X: " . $_SESSION["xwins"] ." - O: ". $_SESSION["owins"];
 	}
 
 	function resetSession(){
+	//Clears session if the user choses.
 		$_SESSION=null;
 	}
 
 	function printGameStatus($gameStatus){
+	//Prints if X wins, O wins, or a tie.
 		echo "$gameStatus";
 	}
 ?>

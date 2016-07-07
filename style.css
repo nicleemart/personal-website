@@ -85,9 +85,14 @@ a:hover {
 	height: 200px;
 	width: 285px;
 	background-color: #696758;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
 }
 .results__text {
 	font-size: 20px;
-	color: white;
 	background-color: #45484B;
+	height: 20px;
+	width: 280px;
+	font-weight: normal;
 }
