@@ -20,10 +20,8 @@
 			$game = "000000000";
 		}
 		$turn = checkTurn($game);
-		$gameWinStatus = checkWin($game);
-		$gameTieStatus = checkTie($game, $gameStatus);
-		updateWinCount($gameWinStatus);
-		updateTieCount($gameTieStatus);
+		$gameStatus = checkWin($game);
+		$gameStatus = checkTie($game, $gameStatus);
 		startSession();
 		storeCurrentGame($game);
 	?>

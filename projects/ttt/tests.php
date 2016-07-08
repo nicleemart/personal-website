@@ -1,33 +1,40 @@
 <?php 
 	include ("game.php"); 
 
-	echo "Testing that X wins";
+	echo "Testing that X wins\n";
 
-	$x= "111000000";
-	$y= 0;
+	$x= "111020212";
+	$y= "X wins!";
 
 	if(checkWin($x)==$y){
-		echo "\nX wins!\n";
-		echo checkWin($x) . "\n";
-		echo $y;
+		echo "\nSuccess\n";
 	}
 	else{
 		echo "\nFailed\n";
 	}
 		echo "\n-------------------------------------------------------------------\n\n";
 
-	echo "Testing that O wins";
+	echo "Testing that O wins\n";
 
-	$x= "000222000";
-	$y= 1;
+	$x= "100222101";
+	$y= "O wins!";
 
 	if (checkWin($x)==$y){
-		echo "\nO wins!\n";
+		echo "\nSuccess\n";
 	}
 	else{
 		echo "\nFailed\n";
 	}
+		echo "\n-------------------------------------------------------------------\n\n";
+	echo "Checking that the game can tie\n";
 
-	echo savedGame();
+	$x= "212121121";
+	$y= "It's a tie!";
+	$tie= "tie";
 
-?>
+	if (checkTie($x, $tie)==$y){
+		echo "\nSuccess\n";
+	}
+	else {
+		echo "\nFailed\n";
+	}
