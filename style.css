@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Raleway);
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "Raleway", sans-serif;
 	color: #413E4A;
-	font-size: 18px;
+	font-size: 14px;
 	background-color: #9CDDC8;
 }
 a:link {
@@ -38,7 +38,7 @@ a:hover {
 	justify-content: center;
 }
 .name {
-	font-size: 40px;
+	font-size: 44px;
 	font-family: "Dancing Script", cursive;
 	display: flex;
 }
@@ -53,7 +53,7 @@ a:hover {
 	font-weight: bold;
 }
  .navTitle {
- 	font-size: 22px;
+ 	font-size: 2px;
  	font-weight: bold;
  	padding-top: 10px;
  	padding-left: 25px;
