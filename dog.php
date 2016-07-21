@@ -1,9 +1,9 @@
-<?php $title="Dog"; ?>
-<?php $thisPage="Dog"; ?>
-<?php $directory_prefix=""; ?>
-<?php include ("includes/top.php"); ?>
+<?php $title="Dog";
+	$thisPage="Dog";
+	$directory_prefix="";
+	include ("includes/top.php"); ?>
 
-				<h2>Rooster, the Australian Shepherd</h2>
+				<div class="pageTitle">Rooster, the Australian Shepherd</div>
 				<p>These are photos of my dog, Rooster.</p>	
 
 <?php include ("includes/bottom.php"); ?>

@@ -1,9 +1,9 @@
-<?php $title="Goals"; ?>
-<?php $thisPage="Goals"; ?>
-<?php $directory_prefix=""; ?>
-<?php include ("includes/top.php"); ?>
+<?php $title="Goals";
+	$thisPage="Goals";
+	$directory_prefix="";
+	include ("includes/top.php"); ?>
 
-				<h2>Goals</h2>
+				<div class="pageTitle">Goals</div>
 				<p>These are my goals.</p>
 
 <?php include ("includes/bottom.php"); ?>

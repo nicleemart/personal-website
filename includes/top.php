@@ -8,10 +8,10 @@
 	</head>
 	<body>
 		<div class="main">
-			<div class="main__nav">
-				<div class="main__header">
+			<div class="left">
+				<div class="header">
 					<?php include("header.php"); ?>
 				</div>
 				<?php include("navigation.php"); ?>
 			</div>
-			<div class="main__body">
+			<div class="bodyContainer">

@@ -30,10 +30,10 @@
 	//Passes an X or O win through the session counter to be added to overall count.
 		if ($gameStatus == "X wins!"){
 			incrementSessionCounter("xwins");
-	}
+		}
 		elseif ($gameStatus == "O wins!"){
 			incrementSessionCounter("owins");
-	}
+		}
 	}
 
 	function checkTie ($game, $gameStatus){
