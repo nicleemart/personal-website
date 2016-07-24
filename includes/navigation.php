@@ -10,8 +10,6 @@
 
 		<div <?php if ($thisPage=="Dog") {echo " id=\"currentpage\"";} ?> class="navText"><a href="<?php echo "$directory_prefix" . "dog.php" ?>">Meet Rooster</a></div>
 
-		<div <?php if ($thisPage=="Params") {echo " id=\"currentpage\"";} ?> class="navText"><a href="<?php echo "$directory_prefix" . "Params.php" ?>">Params</a></div>
-
 		<div class="navHeader">Articles</div>
 
 		<div <?php if ($thisPage=="Hacking") {echo " id=\"currentpage\"";} ?> class="navText"><a href="<?php echo "$directory_prefix" . "articles/hacking.php" ?>">Hacking</a></div>
