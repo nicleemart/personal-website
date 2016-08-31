@@ -90,14 +90,14 @@ a:hover {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 285px;
+	width: 290px;
 	height: 320px;
-	color: #EEE6AB;
+	/*color: #EEE6AB;*/
+	color: black;
 	text-align: center;
 }
 .board__square {
 	background-color: #E6E6E6;
-	display: inline-block;
 	font-size: 90px;
 	height: 90px;
 	width: 90px;
@@ -106,6 +106,18 @@ a:hover {
 	border-color: #44B8B6;
 	float: left;
 	opacity: 0.6;
+}
+.board__square--dark {
+	display: none;
+	background-color: #E6E6E6;
+	font-size: 90px;
+	height: 90px;
+	width: 90px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #44B8B6;
+	float: left;
+	opacity: 1.0;
 }
 .board__square a:link {
 	color: #E6E6E6;
@@ -124,7 +136,7 @@ a:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 	height: 200px;
-	width: 285px;
+	width: 290px;
 	background-color: #696758;
 	color: white;
 	font-size: 25px;

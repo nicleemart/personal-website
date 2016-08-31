@@ -124,7 +124,7 @@
 	}
 
 	function storePastGames(){
-	//Moves a completed game from gameStorage.txt to  be saved with other completed games in pastGames.txt.
+	//Moves a completed game from gameStorage.txt to  be saved with other completed games in pastGames.txt. 
 		$storage = "gameStorage.txt";
 		$fileConnection = file($storage) or die("Error opening file!");
 		$pastGames = "pastGames.txt";

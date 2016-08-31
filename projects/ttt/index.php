@@ -27,11 +27,15 @@
 		startSession();
 		storeCurrentGame($game);
 	?>
+<!-- <script type="text/javascript" src="squareClick.js"></script> -->
 
 	<h2>Play Tic Tac Toe!</h2>
 
 	<div class="board">
 		<div class="board__square">
+			 <?php checkSpaces($game, 0, $turn, $gameStatus) ?>
+		</div>
+		<div class="board__square--dark">
 			 <?php checkSpaces($game, 0, $turn, $gameStatus) ?>
 		</div>
 		<div class="board__square">

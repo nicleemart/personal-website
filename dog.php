@@ -10,5 +10,6 @@
 				<img class="dogPhotos__img" src="images/Rooster2.jpg">
 				<img class="dogPhotos__img" src="images/Rooster3.jpg">
 				<img class="dogPhotos__img" src="images/Rooster4.jpg">
+				</div>
 
 <?php include ("includes/bottom.php"); ?>
