@@ -15,6 +15,22 @@ date_default_timezone_set("America/Chicago");
 }
 ?>
 
+<?php
+	function scan(){
+		$dir = "../personal-website";
+
+	// Open a directory, and read its contents
+	if (is_dir($dir)){
+	  if ($dh = opendir($dir)){
+	    while (($file = readdir($dh)) !== false){
+	      echo  $file . "<br>";
+	    }
+	    closedir($dh);
+	  }
+	}
+}
+?>
+
 <!-- Determines outcome in a rock, paper, scissors match
 String of specific characters (rock, paper or scissors) to determine outcome of match
 Outcome of match (Player 1 wins, Player 2 Wins or tie) -->
