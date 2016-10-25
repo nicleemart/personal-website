@@ -1,8 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><?php echo $title; ?></title>
+			<link rel="stylesheet" type="text/css" href="../../style.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="bodyContainer">
+
 <?php session_start();
 	$title="Tic Tac Toe";
 	$thisPage="TTT";
 	$directory_prefix="../../";
-	include ("../../includes/top.php");
 	include ("game.php");
 ?>
 
